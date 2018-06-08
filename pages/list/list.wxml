@@ -1,0 +1,23 @@
+<view class='search'>
+    <text>搜索</text>
+    <input />
+    <icon type="search" />
+</view>
+<view class='list_body'>
+  <navigator class='item' wx:for="{{shops}}" url="/pages/detail/detail?item={{item.id}}"  wx:key="id">
+    <image src='{{item.images[0]}}' mode='scaleToFill'/>
+    <view class="list_text">
+      <text>{{item.name}}</text>
+      <text>电话:{{item.phone}}</text>
+      <text>地址:{{item.address}}</text>
+      <text>营业时间:{{item.businessHours}}</text>
+    </view>
+    <view class='num'>
+      {{item.score}}
+    </view>
+  </navigator>
+</view>
+
+<!--加载更多  -->
+<view wx:if="{{isMore}}" class='more'>加载更多</view>
+<view wx:else class='more'>小哥哥,已经到底了</view>

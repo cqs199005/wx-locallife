@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+<swiper class="lunbo">
+    <block wx:for="{{shop.images}}" wx:key="*this">
+        <swiper-item>
+            <image src="{{item}}" bindtap="previewHandle" class="slide-image" data-src="{{item}}"  mode="aspectFill"/>
+        </swiper-item>
+    </block>
+</swiper>

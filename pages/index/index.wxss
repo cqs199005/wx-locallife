@@ -1,0 +1,45 @@
+/* pages/index/index.wxss */
+.slider {
+    height: 380rpx;
+}
+.slider navigator,
+.slider image {
+    width: 100%;
+    height: 100%;
+}
+
+/* 九宫格 */
+.gride {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+.gride .item {
+    width: 33.33%;
+    height: 250rpx;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.gride .item image {
+    width: 70rpx;
+    height: 70rpx;
+}
+.gride .item text {
+    font-size: 28rpx;
+    color: #888;
+    margin-top: 20rpx;
+}
+.recommend {
+    display: flex;
+    padding: 30rpx;
+}
+.recommend image {
+    height: 200rpx;
+}
